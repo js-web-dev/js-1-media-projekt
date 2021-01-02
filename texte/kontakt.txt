@@ -1,0 +1,21 @@
+Adressangabe:
+
+Magic Media Studios
+3615 Fake Street
+Level 5, Door 123
+1010 WHATEVER and WHEREEVER
+
+
+Kontaktdaten mit JS:
+
+Kontakt: rainer@magic.de
+Kontakt: hanna@magic.de
+Kontakt: frauke@magic.de
+Kontakt: filip@magic.de
+
+Kontaktdaten ohne JS:
+
+Kontakt: rainer[at]magic.de
+Kontakt: hanna[at]magic.de
+Kontakt: frauke[at]magic.de
+Kontakt: filip[at]magic.de
