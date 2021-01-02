@@ -1,5 +1,5 @@
 body {
-    background-image: url("/bilder/hintergrund.gif");
+    background-image: url("./../bilder/hintergrund.gif");
     background-repeat: repeat-y;
     background-position: center center;
 }
