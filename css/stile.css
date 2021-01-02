@@ -1,5 +1,22 @@
-body {
+html {
     background-image: url("./../bilder/hintergrund.gif");
     background-repeat: repeat-y;
     background-position: center center;
+    background-size: contain;
+    font-family: Trebuchet MS, Arial, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+a {
+    color: #000000;
 }
