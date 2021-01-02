@@ -16,7 +16,7 @@ jobs:
           host: s172.goserver.host
           port: 22
           username: web226
-          key: ${{ secrets.JS_INDISOFT_GITHUB_ACTIONS }}
+          password: ${{ secrets.WEBGO_PW }}
           script: |
             cd ~/www/js-dev.cloud/Modul-JavaScript/3-Praxisprojekte-Abschluss/1-Media-Projekt
             git checkout main
