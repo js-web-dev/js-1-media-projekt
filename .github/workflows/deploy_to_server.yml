@@ -18,7 +18,7 @@ jobs:
           username: web226
           password: ${{ secrets.WEBGO_PW }}
           script: |
-            cd ~/www/js-dev.cloud/Modul-JavaScript/3-Praxisprojekte-Abschluss/1-Media-Projekt
+            cd ~/www/js-dev.cloud/Modul-JavaScript/3-Praxisprojekte-Abschluss/js-1-media-projekt
             git checkout main
             git pull origin main
             git status
