@@ -1,0 +1,6 @@
+<If "req('Host') = 'js-1-media-projekt.js-dev.cloud'">
+    Authtype Basic
+    AuthName "user and password"
+    AuthUserFile /home/www/js-dev.cloud/Modul-JavaScript/3-Praxisprojekte-Abschluss/js-1-media-projekt/.htpasswd
+    Require valid-user
+</If>
