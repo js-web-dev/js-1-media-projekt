@@ -69,10 +69,11 @@ a {
 
 }
 
-#nav a {
+#nav li a {
     font-size: 15px;
     color: #000000;
     margin-right: 30px;
+    text-decoration: none;
 }
 #nav a:hover {
     color: #ffffff;
@@ -80,12 +81,17 @@ a {
 }
 
 main {
-    padding: 10px;
+    width: 100%;
     color: #ffffff;
     float: left;
 }
 
+main > #content_left, main > #content_right {
+    padding: 10px;
+}
+
 #content_left {
+    float: left;
     width: 390px;
     text-align: justify;
 }
@@ -104,10 +110,42 @@ main {
     font-weight: bold;
 }
 
+#content_right {
+    float: right;
+    width: 290px;
+    text-align: center;
+}
+
+#content_right img {
+    margin-right: 3px;
+}
+
+.infobox {
+    text-align: justify;
+    padding-left: 40px;
+    width: 200px;
+}
+
+.infobox_hide {
+    display: none;
+}
+
+.infobox_show {
+    display: block;
+}
+
 footer {
     background: #333;
     float: left;
     width: 100%;
     padding: 5px;
     color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #000000;
 }
