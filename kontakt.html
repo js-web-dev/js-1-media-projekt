@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt mit HTML, CSS und JavaScript"/>
+    <meta name="keywords" lang="de" content="kontakt, html, css, JavaScript, Skriptsprachen, Websprachen, Medien"/>
+    <meta name="robots" content="nofollow"/>
+    <meta name="robots" content="noindex"/>
+    <title>Media Magic - The Worldwide Media – Kontakt</title>
+    <link rel="stylesheet" href="./css/stile.css">
+</head>
+<body id="kontakt">
+
+<div id="wrapper">
+    <header>
+
+        <div id="mediatext">
+            <img src="./bilder/header_text.jpg" alt="Schriftzug Media"/>
+        </div>
+
+        <div id="mediapic">
+            <img src="./bilder/header_bild.jpg"
+                 alt="4 Bilder verschiedener Medienformate, wie Zeitung, Musik, Computer und Film"/>
+        </div>
+        <div id="medialogo">
+            <img src="./bilder/media_magic.gif" alt="Schriftzug Media Magic"/>
+        </div>
+
+    </header>
+
+    <nav id="nav">
+        <li>
+            <a href="./index.html">Magic Media</a>
+        </li>
+        <li>
+            <a href="./produktionen.html">Produktionen</a>
+        </li>
+        <li>
+            <a class="active" href="./kontakt.html">Kontakt</a>
+        </li>
+    </nav>
+
+    <main>
+        <section id="content_left">
+            <h1>Kontakt mit HTML, CSS und JavaScript</h1>
+            <article id="Kontakt-mit-html-css-und-javascript">
+                <form id="contactform" method="post" accept-charset="UTF-8" action="" target="_blank"
+                      onsubmit="return validateForm(e);">
+                    <fieldset>
+                        <legend>Kontaktformular:</legend>
+                        <label for="anrede">*Anrede:</label><br>
+                        <select required id="anrede" name="anrede" onchange="validateSex(this)">
+                            <option value="">--- bitte wählen ---</option>
+                            <option value="M">Herr</option>
+                            <option value="W">Frau</option>
+                        </select>
+                        <span class="message" id="anrede-message"></span>
+                        <br>
+                        <label for="firstname">*Vorname</label><br>
+                        <input required id="firstname" name=firstname" type="text" value="" onkeyup="validateName(this)" />
+                        <span class="message" id="firstname-message"></span>
+                        <br>
+                        <label for="lastname">*Nachname</label><br>
+                        <input required id="lastname" name="lastname" type="text" value="" onkeyup="validateName(this)"/>
+                        <span class="message" id="lastname-message"></span>
+                        <br>
+                        <label for="email">*E-Mail</label><br>
+                        <input required id="email" name="email" type="email" value="" onkeyup="validateEmail(this)" />
+                        <span class="message" id="email-message"></span>
+                        <br>
+                        <label for="subject">*Betreff:</label><br>
+                        <input required id="subject" name="subject" type="text" value="" onkeyup="validateSubject(this)" />
+                        <span class="message" id="subject-message"></span>
+                        <br>
+                        <div id="checkboxarea">
+                            <p>Bitte schicken Sie mir Informationen über folgende Themen zu:</p>
+                            <div id="checkboxes">
+                                <input id="html" name="html" type="checkbox" value="HTML"/> HTML
+                                <input id="css" name="css" type="checkbox" value="CSS"/> CSS
+                                <input id="js" name="js" type="checkbox" value="JS"/> JavaScript
+                            </div>
+                        </div>
+                        <br>
+
+                        <label for="message">*Mitteilung</label><br>
+                        <textarea required id="message" name="message" placeholder="Ihre Mitteilung" onkeyup="validateMessage(this)"
+                                  cols="30" rows="6"></textarea>
+                        <span class="message" id="message-message"></span>
+
+                        <button type="submit" disabled id="submit-button" value="Submit" onclick="validateForm(event)">Abschicken</button>
+                        <button type="reset" id="reset-button" value="Cancel" onclick="clearAllForms()">Zurücksetzen</button>
+                        <span class="message" id="submit-message"></span>
+                    </fieldset>
+
+                </form>
+
+                <div id="contactinfoarea">
+
+                </div>
+                <noscript>
+                    Alternative Variante:
+                    <p>Kontakt: rainer[at]magic.de</p>
+                    <p>Kontakt: hanna[at]magic.de</p>
+                    <p>Kontakt: frauke[at]magic.de</p>
+                    <p>Kontakt: filip[at]magic.de</p>
+                </noscript>
+
+            </article>
+        </section>
+
+        <section id="content_right">
+            <address id="address">
+                <h3>Magic Media Studios</h3>
+                <p>3615 Fake Street</p>
+                <p>Level 5, Door 123</p>
+                <p>1010 WHATEVER and WHEREEVER</p>
+            </address>
+            <div id="maps">
+                <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Karl-Heine-Stra%C3%9Fe%2097%20Leipzig+(Indisoft)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        width="250" height="250" frameborder="0"></iframe>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6927780b578b95d1220ccaf448b18e5aa87db4e9'></script>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        &copy; by Media Magic 2021 | <a href="#wrapper">Zum Seitenanfang</a>
+    </footer>
+    <script src="./js/funktionen.js"></script>
+
+</div>
+
+</body>
+</html>

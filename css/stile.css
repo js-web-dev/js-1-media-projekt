@@ -75,7 +75,7 @@ a {
     margin-right: 30px;
     text-decoration: none;
 }
-#nav a:hover {
+#nav a:hover, #nav a.active {
     color: #ffffff;
     text-decoration: underline;
 }
@@ -110,6 +110,69 @@ main > #content_left, main > #content_right {
     font-weight: bold;
 }
 
+#contactinfoarea span {
+    line-height: 2;
+}
+
+#address p {
+    margin: auto;
+}
+
+input, textarea {
+    width: 203px;
+    border-radius: 2px;
+}
+
+select {
+    width: 209px;
+}
+
+label {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#checkboxarea {
+    margin-top: 30px;
+    display: block;
+}
+
+#reset-button {
+    margin-left: 23px;
+}
+
+#checkboxes input {
+    width: auto;
+}
+
+.message {
+    width: 145px;
+    border-radius: 2px;
+    margin-top: 1px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.error-message {
+    color: darkred!important;
+    background: lightgrey;
+    border: 1px solid darkred!important;
+}
+
+.success-message {
+    color: darkgreen!important;
+    background: lightgrey;
+    border: 1px solid darkgreen!important;
+}
+
+#message-message {
+    vertical-align: top;
+}
+
+#maps {
+    margin-top: 25px;
+}
+
 #content_right {
     float: right;
     width: 290px;
@@ -124,14 +187,11 @@ main > #content_left, main > #content_right {
     text-align: justify;
     padding-left: 40px;
     width: 200px;
-}
-
-.infobox_hide {
     display: none;
 }
 
 .infobox_show {
-    display: block;
+    display: block!important;
 }
 
 footer {
@@ -149,3 +209,5 @@ footer a {
 footer a:hover {
     color: #000000;
 }
+
+
