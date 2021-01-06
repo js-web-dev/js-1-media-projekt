@@ -188,12 +188,9 @@ window.onload = function () {
         createAndAppendElementsToElement(ele_contactinfos, ele_contactinfoarea);
 
 
-
         /* Formular-Validierung */
 
         checkAllRequiredFields('contactform');
-
-
 
 
     }
@@ -207,10 +204,7 @@ window.onload = function () {
 function createAndAppendElementsToElement(elements, toElement) {
     for (let element in elements) {
         let new_element = document.createElement(elements[element].tagName);
-        if (elements[element].src) {
-            new_element.src = elements[element].src
-        }
-        ;
+        if (elements[element].src) { new_element.src = elements[element].src} ;
         if (elements[element].title) {
             new_element.title = elements[element].title
         }
@@ -306,7 +300,7 @@ function checkAllRequiredFields(formId) {
     let reqFields = document.getElementById(formId).querySelectorAll("[required]");
     if (reqFields.length > 0) {
         let numSuccessFields = 0;
-        for (let i=0; i < reqFields.length; i++) {
+        for (let i = 0; i < reqFields.length; i++) {
             if (!reqFields[i].classList.contains("success-message")) {
                 document.getElementById("submit-button").disabled = true;
                 console.log(reqFields[i].id + ' nicht valide');
@@ -428,7 +422,7 @@ function validateMessage(field) {
 function clearAllForms() {
     let formFields = document.getElementById('contactform').querySelectorAll("[required]");
     if (formFields.length > 0) {
-        for (let i=0; i < formFields.length; i++) {
+        for (let i = 0; i < formFields.length; i++) {
             document.getElementById(formFields[i].id + "-message").classList = "message";
             document.getElementById(formFields[i].id + "-message").innerHTML = "";
             formFields[i].classList = "";
@@ -441,17 +435,23 @@ function validateForm(e) {
     e.preventDefault();
     let formFields = document.getElementById('contactform').querySelectorAll("[required]");
     if (formFields.length > 0) {
-        for (let i=0; i < formFields.length; i++) {
+        for (let i = 0; i < formFields.length; i++) {
             if (formFields[i].id == "anrede") {
-                if (!formFields[i].onchange()) {
-                    // return false;
-                }
+                // console.log(validateSex(formFields[i]));
+                console.log(formFields[i].oninput(null));
+
             }
-            else {
-                if (!formFields[i].onkeyup(null)) {
-                    // return false;
-                }
-            }
+
+            // if (formFields[i].id == "anrede") {
+            //     if (!formFields[i].onchange()) {
+            //         // return false;
+            //     }
+            // }
+            // else {
+            //     if (!formFields[i].onkeyup(null)) {
+            //         // return false;
+            //     }
+            // }
         }
     }
     sendFakeMail();
@@ -469,7 +469,7 @@ function sendFakeMail() {
     if (checkboxes.length > 0) {
         for (let i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
-                mailbody += "Plus Infos über: " +  checkboxes[i].value + "\n";
+                mailbody += "Plus Infos über: " + checkboxes[i].value + "\n";
             }
         }
     }

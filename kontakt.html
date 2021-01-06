@@ -47,9 +47,9 @@
                 <form id="contactform" method="post" accept-charset="UTF-8" action="" target="_blank"
                       onsubmit="return validateForm(e);">
                     <fieldset>
-                        <legend>Kontaktformular:</legend>
+                        <legend>Kontaktformular______:</legend>
                         <label for="anrede">*Anrede:</label><br>
-                        <select required id="anrede" name="anrede" onchange="validateSex(this)">
+                        <select required id="anrede" name="anrede" oninput="validateSex(this)">
                             <option value="">--- bitte wählen ---</option>
                             <option value="M">Herr</option>
                             <option value="W">Frau</option>
@@ -57,19 +57,19 @@
                         <span class="message" id="anrede-message"></span>
                         <br>
                         <label for="firstname">*Vorname</label><br>
-                        <input required id="firstname" name=firstname" type="text" value="" onkeyup="validateName(this)" />
+                        <input required id="firstname" name=firstname" type="text" value="" oninput="validateName(this)" />
                         <span class="message" id="firstname-message"></span>
                         <br>
                         <label for="lastname">*Nachname</label><br>
-                        <input required id="lastname" name="lastname" type="text" value="" onkeyup="validateName(this)"/>
+                        <input required id="lastname" name="lastname" type="text" value="" oninput="validateName(this)"/>
                         <span class="message" id="lastname-message"></span>
                         <br>
                         <label for="email">*E-Mail</label><br>
-                        <input required id="email" name="email" type="email" value="" onkeyup="validateEmail(this)" />
+                        <input required id="email" name="email" type="email" value="" oninput="validateEmail(this)" />
                         <span class="message" id="email-message"></span>
                         <br>
                         <label for="subject">*Betreff:</label><br>
-                        <input required id="subject" name="subject" type="text" value="" onkeyup="validateSubject(this)" />
+                        <input required id="subject" name="subject" type="text" value="" oninput="validateSubject(this)" />
                         <span class="message" id="subject-message"></span>
                         <br>
                         <div id="checkboxarea">
@@ -83,7 +83,7 @@
                         <br>
 
                         <label for="message">*Mitteilung</label><br>
-                        <textarea required id="message" name="message" placeholder="Ihre Mitteilung" onkeyup="validateMessage(this)"
+                        <textarea required id="message" name="message" placeholder="Ihre Mitteilung" oninput="validateMessage(this)"
                                   cols="30" rows="6"></textarea>
                         <span class="message" id="message-message"></span>
 
